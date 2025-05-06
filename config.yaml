@@ -1,40 +1,45 @@
 baseURL: "https://arkalim.netlify.app"
 languageCode: en-us
-title: Abdur Rahman
+title: Home
 theme: PaperMod
+copyright: "© 2025 All Rights Reserved"
+
 
 menu:
   main:
-    - identifier: home
-      name: Home
-      url: /
+    - identifier: about
+      name: About
+      url: /about
       weight: 10
-    - identifier: blog
-      name: Blog
-      url: /blog
+    - identifier: thoughts
+      name: Thoughts
+      url: /thoughts
       weight: 20
     - identifier: projects
       name: Projects
       url: /projects
       weight: 30
-    - identifier: experience
-      name: Experience
-      url: /experience
-      weight: 40
-    - identifier: search
-      name: Search
-      url: /search
-      weight: 50
-    # - identifier: tags
-    #   name: Tags
-    #   url: /tags
-    #   weight: 60
+    # - identifier: experience
+    #   name: Experience
+    #   url: /experience
+    #   weight: 40
+    # Search removed
+    # - identifier: search
+    #   name: Search
+    #   url: /search
+    #   weight: 50
+    - identifier: tags
+      name: Tags
+      url: /tags
+      weight: 60
     # - identifier: notes
     #   name: Notes
     #   url: https://notes.arkalim.org
     #   weight: 70
 
 params:
+  social:
+    twitter: arkalim
   # theme
   showToc: true
   TocOpen: false
@@ -48,11 +53,11 @@ params:
   # Home Page
   profileMode:
     enabled: true
-    title: "Abdur Rahman"
-    subtitle: Hi 👋 I'm Abdur, a tech enthusiast who loves solving complex problems. As a Software Developer in the Backend Infrastructure team at [**Clio**](https://www.clio.com), I'm building robust systems to transform the legal experience for all. By evening, you can find me pushing the limits of my strength at the gym or whipping up my favorite recipe in the kitchen. Let's connect and create something awesome together!
+    title: "Tim"
+    subtitle: Graduate student at UC Irvine studying data science and financial markets.
 
  
-    imageUrl: "home/casual-small-square.jpeg"
+    imageUrl: "home/home.jpg"
     imageWidth: 220
     imageHeight: 220
     # buttons:
@@ -68,14 +73,12 @@ params:
     hiddenInSingle: false # hide on single page
 
   socialIcons:
-    - name: "email"
+    - name: email
       url: "mailto:abdur.rahman.kalim@gmail.com"
-    - name: "linkedin"
+    - name: linkedin
       url: "https://www.linkedin.com/in/abdurrahmankalim"
-    - name: "github"
-      url: "https://github.com/arkalim"
-    - name: "youtube"
-      url: "https://www.youtube.com/c/AbdurRahmanKalim"
+    - name: github
+      url: "https://github.com/timavn"
 
   # text search
   fuseOpts:
