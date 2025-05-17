@@ -81,11 +81,11 @@
     </item>
     
     <item>
-      <title>Bash</title>
-      <link>http://localhost:1313/tags/bash/</link>
+      <title>Backtesting</title>
+      <link>http://localhost:1313/tags/backtesting/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/bash/</guid>
+      <guid>http://localhost:1313/tags/backtesting/</guid>
       <description></description>
     </item>
     
@@ -207,11 +207,11 @@
     </item>
     
     <item>
-      <title>GitHub Action</title>
-      <link>http://localhost:1313/tags/github-action/</link>
+      <title>GIP Model</title>
+      <link>http://localhost:1313/tags/gip-model/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/github-action/</guid>
+      <guid>http://localhost:1313/tags/gip-model/</guid>
       <description></description>
     </item>
     
@@ -324,15 +324,6 @@
     </item>
     
     <item>
-      <title>MkDocs</title>
-      <link>http://localhost:1313/tags/mkdocs/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/tags/mkdocs/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>ML</title>
       <link>http://localhost:1313/tags/ml/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -419,15 +410,6 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/tags/react/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>RegEx</title>
-      <link>http://localhost:1313/tags/regex/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/tags/regex/</guid>
       <description></description>
     </item>
     

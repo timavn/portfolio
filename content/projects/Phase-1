@@ -1,0 +1,73 @@
+---
+
+title: "Phase 1: The GIP Model & Economic Quads"
+description: "A systematic approach to modeling Growth, Inflation, and Policy (GIP) for macro regime identification, benchmarked against Hedgeye’s process."
+dateString: May 2025
+draft: false
+tags: ["GIP Model", "Backtesting"]
+weight: 1
+cover:
+    image: "/projects/Phase-1/image_sharpened.png"
+---
+
+### Introduction
+
+This post documents the first phase of my full-cycle investment process: constructing and validating a Growth, Inflation, and Policy (GIP) model for the US economy. The goal is to create a systematic, data-driven framework for identifying macroeconomic regimes—using the same principles outlined in Hedgeye’s “Master The Market,” and benchmarking my results against their published numbers.
+
+### Why Start with the US?
+
+While Hedgeye’s process is global, I’m starting with the US for simplicity and data availability. If the process works here, it can be extended to other economies.
+
+### The Benchmark: Hedgeye’s GIP Quads
+
+To validate my approach, I’m using a reference image from Hedgeye (see below) that shows their historical Quad assignments for the US. My objective is to replicate these results as closely as possible using public data and transparent methods.
+
+![Hedgeye GIP Benchmark](/projects/full-cycle-investment-process/image_sharpened.png)
+
+### The GIP Model: Core Concepts
+
+The GIP framework classifies each period into one of four “Quads” based on the rate of change in economic growth and inflation:
+
+- **Quad 1:** Growth accelerating, inflation slowing
+- **Quad 2:** Growth accelerating, inflation accelerating
+- **Quad 3:** Growth slowing, inflation accelerating
+- **Quad 4:** Growth slowing, inflation slowing
+
+The key is to measure the *rate of change* (RoC) for both growth and inflation, typically using year-over-year (YoY) and quarter-over-quarter (QoQ) data.
+
+### Data Selection
+
+For the US, I’ll use:
+
+- **Growth:** Real GDP (YoY and QoQ, from FRED)
+- **Inflation:** CPI (YoY and QoQ, from FRED)
+
+### Methodology
+
+1. **Data Collection:** Download quarterly US Real GDP and CPI data from FRED.
+2. **Calculate Rates of Change:** Compute YoY and QoQ changes for both series.
+3. **Quad Assignment Rules:**  
+   - If growth RoC > 0 and inflation RoC < 0 → Quad 1  
+   - If growth RoC > 0 and inflation RoC > 0 → Quad 2  
+   - If growth RoC < 0 and inflation RoC > 0 → Quad 3  
+   - If growth RoC < 0 and inflation RoC < 0 → Quad 4
+4. **Backtest:** Assign each quarter to a Quad and compare the results to the Hedgeye benchmark image above.
+5. **Validation:** Analyze discrepancies and refine the process as needed.
+
+### Next Steps
+
+- **Implementation:** I’ll code this process in Python, using Pandas for data wrangling and Matplotlib for visualization.
+- **Benchmarking:** I’ll publish the results, including a side-by-side comparison with the Hedgeye Quads.
+- **Iteration:** Any mismatches will be investigated and the methodology refined.
+
+### Why This Matters
+
+A robust, repeatable GIP model is the foundation for the rest of my investment process. If I can reliably identify macro regimes, I can systematically align asset allocation and risk management with the prevailing environment.
+
+---
+
+*Stay tuned for the next post, where I’ll share the code, results, and lessons learned from this first validation step.*
+
+---
+
+Let me know if you want to add code snippets, FRED links, or any other details!

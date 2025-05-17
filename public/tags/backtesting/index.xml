@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Backtesting on Home</title>
+    <link>http://localhost:1313/tags/backtesting/</link>
+    <description>Recent content in Backtesting on Home</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© 2025 All Rights Reserved</copyright><atom:link href="http://localhost:1313/tags/backtesting/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Full Cycle Investment Process</title>
+      <link>http://localhost:1313/projects/quad-backtest/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/projects/quad-backtest/</guid>
+      <description>A systematic approach to modeling Growth, Inflation, and Policy (GIP) for macro regime identification, benchmarked against Hedgeye’s process.</description>
+    </item>
+    
+  </channel>
+</rss>

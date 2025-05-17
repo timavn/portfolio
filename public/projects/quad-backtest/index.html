@@ -5,9 +5,9 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
-<title>Obsidian Publish using GitHub Action | Home</title>
-<meta name="keywords" content="AWS, RegEx, MkDocs, GitHub Action, Docker, Bash, TypeScript, Node.JS">
-<meta name="description" content="A custom GitHub Action to publish Obsidian notes as a website">
+<title>Quad Backtest | Home</title>
+<meta name="keywords" content="GIP Model, Backtesting">
+<meta name="description" content="A systematic approach to modeling Growth, Inflation, and Policy (GIP) for macro regime identification, benchmarked against Hedgeye’s process.">
 <meta name="author" content="">
 <link rel="canonical" href="http://localhost:1313/projects/quad-backtest/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.min.2b833c6baa7a96407c2417c7a4049985b42c21cccc2472abf4603967eafd2273.css" integrity="sha256-K4M8a6p6lkB8JBfHpASZhbQsIczMJHKr9GA5Z&#43;r9InM=" rel="preload stylesheet" as="style">
@@ -57,18 +57,18 @@
         }
 
     </style>
-</noscript><meta property="og:title" content="Obsidian Publish using GitHub Action" />
-<meta property="og:description" content="A custom GitHub Action to publish Obsidian notes as a website" />
+</noscript><meta property="og:title" content="Quad Backtest" />
+<meta property="og:description" content="A systematic approach to modeling Growth, Inflation, and Policy (GIP) for macro regime identification, benchmarked against Hedgeye’s process." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://localhost:1313/projects/quad-backtest/" />
-<meta property="og:image" content="http://localhost:1313/projects/obsidian-publish-github-action/cover.jpg" /><meta property="article:section" content="projects" />
+<meta property="og:image" content="http://localhost:1313/projects/full-cycle-investment-process/image_sharpened.png" /><meta property="article:section" content="projects" />
 
 
 
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:image" content="http://localhost:1313/projects/obsidian-publish-github-action/cover.jpg" />
-<meta name="twitter:title" content="Obsidian Publish using GitHub Action"/>
-<meta name="twitter:description" content="A custom GitHub Action to publish Obsidian notes as a website"/>
+<meta name="twitter:image" content="http://localhost:1313/projects/full-cycle-investment-process/image_sharpened.png" />
+<meta name="twitter:title" content="Quad Backtest"/>
+<meta name="twitter:description" content="A systematic approach to modeling Growth, Inflation, and Policy (GIP) for macro regime identification, benchmarked against Hedgeye’s process."/>
 <meta name="twitter:site" content="@arkalim"/>
 
 
@@ -86,7 +86,7 @@
     {
       "@type": "ListItem",
       "position":  2 ,
-      "name": "Obsidian Publish using GitHub Action",
+      "name": "Quad Backtest",
       "item": "http://localhost:1313/projects/quad-backtest/"
     }
   ]
@@ -96,16 +96,16 @@
 {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  "headline": "Obsidian Publish using GitHub Action",
-  "name": "Obsidian Publish using GitHub Action",
-  "description": "A custom GitHub Action to publish Obsidian notes as a website",
+  "headline": "Quad Backtest",
+  "name": "Quad Backtest",
+  "description": "A systematic approach to modeling Growth, Inflation, and Policy (GIP) for macro regime identification, benchmarked against Hedgeye’s process.",
   "keywords": [
-    "AWS", "RegEx", "MkDocs", "GitHub Action", "Docker", "Bash", "TypeScript", "Node.JS"
+    "GIP Model", "Backtesting"
   ],
-  "articleBody": "Intro In my video about How I cleared the AWS SAA Certification Exam, I shared my preparation strategy as well as tips to ace the exam. I also gave a glimpse of my revision notes that I prepared while taking the course and practice exams on Udemy. After that video was out, I got so many comments and DMs, requesting me to share my notes, but the problem was that I took these notes using a note-taking app called Obsidian which stores them in markdown format locally on my Mac. Once I’m done editing my notes, I push them to a GitHub repository to make sure I don’t lose them if my laptop breaks.\nSo, if you want to view my notes exactly like I do, you can clone my Obsidian Vault repository and download Obsidian to render it. But, this solution isn’t elegant as it would require you to download an additional software. So, I along with my college roommate, Sarthak Narayan, had been working over the past 2 weeks on the project, Obsidian Publish using GitHub Action, which would allow us to effortlessly publish our notes as a static website.\nIt is complete and I’ve used it to publish my notes at notes.arkalim.org. Working The GitHub Action spins up a Docker container which parses and converts Obsidian markdown notes into a special markdown format understood by MkDocs, an open-source static site generator. MkDocs is actually meant for preparing documentations but works well for notes too. After the markdown files have been converted, all the images in my notes are compressed to a fraction of their original size so that they can load quickly in your web browser. A static site is then built using MkDocs and then finally deployed on Netlify. All of this happens automatically using GitHub Actions. All I have to do is update my notes and push the changes to GitHub.\nFinal thoughts Having an automated way to publish your notes online with the community is a powerful way to share knowledge. This project has also made it exceedingly easy for me to refer my notes from anywhere, which is powerful when you work on a lot of systems.\nResources My Notes Obsidian Publish - GitHub Action Parser and Image Compressor MkDocs - Material Theme ",
-  "wordCount" : "380",
+  "articleBody": "Introduction This post documents the first phase of my full-cycle investment process: constructing and validating a Growth, Inflation, and Policy (GIP) model for the US economy. The goal is to create a systematic, data-driven framework for identifying macroeconomic regimes—using the same principles outlined in Hedgeye’s “Master The Market,” and benchmarking my results against their published numbers.\nWhy Start with the US? While Hedgeye’s process is global, I’m starting with the US for simplicity and data availability. If the process works here, it can be extended to other economies.\nThe Benchmark: Hedgeye’s GIP Quads To validate my approach, I’m using a reference image from Hedgeye (see below) that shows their historical Quad assignments for the US. My objective is to replicate these results as closely as possible using public data and transparent methods.\nThe GIP Model: Core Concepts The GIP framework classifies each period into one of four “Quads” based on the rate of change in economic growth and inflation:\nQuad 1: Growth accelerating, inflation slowing Quad 2: Growth accelerating, inflation accelerating Quad 3: Growth slowing, inflation accelerating Quad 4: Growth slowing, inflation slowing The key is to measure the rate of change (RoC) for both growth and inflation, typically using year-over-year (YoY) and quarter-over-quarter (QoQ) data.\nData Selection For the US, I’ll use:\nGrowth: Real GDP (YoY and QoQ, from FRED) Inflation: CPI (YoY and QoQ, from FRED) Methodology Data Collection: Download quarterly US Real GDP and CPI data from FRED. Calculate Rates of Change: Compute YoY and QoQ changes for both series. Quad Assignment Rules: If growth RoC \u003e 0 and inflation RoC \u003c 0 → Quad 1 If growth RoC \u003e 0 and inflation RoC \u003e 0 → Quad 2 If growth RoC \u003c 0 and inflation RoC \u003e 0 → Quad 3 If growth RoC \u003c 0 and inflation RoC \u003c 0 → Quad 4 Backtest: Assign each quarter to a Quad and compare the results to the Hedgeye benchmark image above. Validation: Analyze discrepancies and refine the process as needed. Next Steps Implementation: I’ll code this process in Python, using Pandas for data wrangling and Matplotlib for visualization. Benchmarking: I’ll publish the results, including a side-by-side comparison with the Hedgeye Quads. Iteration: Any mismatches will be investigated and the methodology refined. Why This Matters A robust, repeatable GIP model is the foundation for the rest of my investment process. If I can reliably identify macro regimes, I can systematically align asset allocation and risk management with the prevailing environment.\nStay tuned for the next post, where I’ll share the code, results, and lessons learned from this first validation step.\nLet me know if you want to add code snippets, FRED links, or any other details!\n",
+  "wordCount" : "449",
   "inLanguage": "en",
-  "image":"http://localhost:1313/projects/obsidian-publish-github-action/cover.jpg","datePublished": "0001-01-01T00:00:00Z",
+  "image":"http://localhost:1313/projects/full-cycle-investment-process/image_sharpened.png","datePublished": "0001-01-01T00:00:00Z",
   "dateModified": "0001-01-01T00:00:00Z",
   "mainEntityOfPage": {
     "@type": "WebPage",
@@ -194,19 +194,19 @@
   <header class="post-header">
     <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/projects/">Projects</a></div>
     <h1 class="post-title">
-      Obsidian Publish using GitHub Action
+      Quad Backtest
     </h1>
     <div class="post-description">
-      A custom GitHub Action to publish Obsidian notes as a website
+      A systematic approach to modeling Growth, Inflation, and Policy (GIP) for macro regime identification, benchmarked against Hedgeye’s process.
     </div>
     <div class="post-meta">
 
 
-June 2022
+May 2025
 
 </div>
   </header> 
-<figure class="entry-cover"><img loading="lazy" src="http://localhost:1313/projects/obsidian-publish-github-action/cover.jpg" alt="">
+<figure class="entry-cover"><img loading="lazy" src="http://localhost:1313/projects/full-cycle-investment-process/image_sharpened.png" alt="">
         
 </figure><div class="toc">
     <details >
@@ -216,52 +216,85 @@ June 2022
 
         <div class="inner"><ul>
                 <li>
-                    <a href="#intro" aria-label="Intro">Intro</a></li>
+                    <a href="#introduction" aria-label="Introduction">Introduction</a></li>
                 <li>
-                    <a href="#working" aria-label="Working">Working</a></li>
+                    <a href="#why-start-with-the-us" aria-label="Why Start with the US?">Why Start with the US?</a></li>
                 <li>
-                    <a href="#final-thoughts" aria-label="Final thoughts">Final thoughts</a></li>
+                    <a href="#the-benchmark-hedgeyes-gip-quads" aria-label="The Benchmark: Hedgeye’s GIP Quads">The Benchmark: Hedgeye’s GIP Quads</a></li>
                 <li>
-                    <a href="#resources" aria-label="Resources">Resources</a>
+                    <a href="#the-gip-model-core-concepts" aria-label="The GIP Model: Core Concepts">The GIP Model: Core Concepts</a></li>
+                <li>
+                    <a href="#data-selection" aria-label="Data Selection">Data Selection</a></li>
+                <li>
+                    <a href="#methodology" aria-label="Methodology">Methodology</a></li>
+                <li>
+                    <a href="#next-steps" aria-label="Next Steps">Next Steps</a></li>
+                <li>
+                    <a href="#why-this-matters" aria-label="Why This Matters">Why This Matters</a>
                 </li>
             </ul>
         </div>
     </details>
 </div>
 
-  <div class="post-content"><h2 id="intro">Intro<a hidden class="anchor" aria-hidden="true" href="#intro">#</a></h2>
-<p>In my video about <a href="https://arkalim.org/blog/aws-saa-certification/"><strong>How I cleared the AWS SAA Certification Exam</strong></a>, I shared my preparation strategy as well as tips to ace the exam. I also gave a glimpse of my revision notes that I prepared while taking the course and practice exams on Udemy. After that video was out, I got so many comments and DMs, requesting me to share my notes, but the problem was that I took these notes using a note-taking app called Obsidian which stores them in markdown format locally on my Mac. Once I&rsquo;m done editing my notes, I push them to a GitHub repository to make sure I don&rsquo;t lose them if my laptop breaks.</p>
-<p><img loading="lazy" src="/projects/obsidian-publish-github-action/img1.jpg" alt="my notes"  />
+  <div class="post-content"><h3 id="introduction">Introduction<a hidden class="anchor" aria-hidden="true" href="#introduction">#</a></h3>
+<p>This post documents the first phase of my full-cycle investment process: constructing and validating a Growth, Inflation, and Policy (GIP) model for the US economy. The goal is to create a systematic, data-driven framework for identifying macroeconomic regimes—using the same principles outlined in Hedgeye’s “Master The Market,” and benchmarking my results against their published numbers.</p>
+<h3 id="why-start-with-the-us">Why Start with the US?<a hidden class="anchor" aria-hidden="true" href="#why-start-with-the-us">#</a></h3>
+<p>While Hedgeye’s process is global, I’m starting with the US for simplicity and data availability. If the process works here, it can be extended to other economies.</p>
+<h3 id="the-benchmark-hedgeyes-gip-quads">The Benchmark: Hedgeye’s GIP Quads<a hidden class="anchor" aria-hidden="true" href="#the-benchmark-hedgeyes-gip-quads">#</a></h3>
+<p>To validate my approach, I’m using a reference image from Hedgeye (see below) that shows their historical Quad assignments for the US. My objective is to replicate these results as closely as possible using public data and transparent methods.</p>
+<p><img loading="lazy" src="/projects/full-cycle-investment-process/image_sharpened.png" alt="Hedgeye GIP Benchmark"  />
 </p>
-<p>So, if you want to view my notes exactly like I do, you can clone my <a href="https://github.com/arkalim/obsidian-vault"><strong>Obsidian Vault</strong></a> repository and download <strong>Obsidian</strong> to render it. But, this solution isn&rsquo;t elegant as it would require you to download an additional software. So, I along with my college roommate, <a href="https://sarthaknarayan.tech/"><strong>Sarthak Narayan</strong></a>, had been working over the past 2 weeks on the project, <a href="https://github.com/project-cool/obsidian-publish-action"><strong>Obsidian Publish using GitHub Action</strong></a>, which would allow us to effortlessly publish our notes as a static website.</p>
-<p>It is complete and I&rsquo;ve used it to publish my notes at <a href="https://notes.arkalim.org"><strong>notes.arkalim.org</strong></a>.
-<img loading="lazy" src="/projects/obsidian-publish-github-action/img2.jpg" alt="published notes"  />
-</p>
-<h2 id="working">Working<a hidden class="anchor" aria-hidden="true" href="#working">#</a></h2>
-<p>The <strong>GitHub Action</strong> spins up a <strong>Docker</strong> container which parses and converts Obsidian markdown notes into a special markdown format understood by <strong>MkDocs</strong>, an open-source static site generator. MkDocs is actually meant for preparing documentations but works well for notes too. After the markdown files have been converted, all the images in my notes are compressed to a fraction of their original size so that they can load quickly in your web browser. A static site is then built using MkDocs and then finally deployed on <strong>Netlify</strong>. All of this happens automatically using <strong>GitHub Actions</strong>. All I have to do is update my notes and push the changes to GitHub.</p>
-<h2 id="final-thoughts">Final thoughts<a hidden class="anchor" aria-hidden="true" href="#final-thoughts">#</a></h2>
-<p>Having an automated way to publish your notes online with the community is a powerful way to share knowledge. This project has also made it exceedingly easy for me to refer my notes from anywhere, which is powerful when you work on a lot of systems.</p>
-<h2 id="resources">Resources<a hidden class="anchor" aria-hidden="true" href="#resources">#</a></h2>
+<h3 id="the-gip-model-core-concepts">The GIP Model: Core Concepts<a hidden class="anchor" aria-hidden="true" href="#the-gip-model-core-concepts">#</a></h3>
+<p>The GIP framework classifies each period into one of four “Quads” based on the rate of change in economic growth and inflation:</p>
 <ul>
-<li><a href="https://notes.arkalim.org">My Notes</a></li>
-<li><a href="https://github.com/project-cool/obsidian-publish-action">Obsidian Publish - GitHub Action</a></li>
-<li><a href="https://github.com/project-cool/obsidian-to-mkdocs">Parser and Image Compressor</a></li>
-<li><a href="https://squidfunk.github.io/mkdocs-material/">MkDocs - Material Theme</a></li>
+<li><strong>Quad 1:</strong> Growth accelerating, inflation slowing</li>
+<li><strong>Quad 2:</strong> Growth accelerating, inflation accelerating</li>
+<li><strong>Quad 3:</strong> Growth slowing, inflation accelerating</li>
+<li><strong>Quad 4:</strong> Growth slowing, inflation slowing</li>
 </ul>
+<p>The key is to measure the <em>rate of change</em> (RoC) for both growth and inflation, typically using year-over-year (YoY) and quarter-over-quarter (QoQ) data.</p>
+<h3 id="data-selection">Data Selection<a hidden class="anchor" aria-hidden="true" href="#data-selection">#</a></h3>
+<p>For the US, I’ll use:</p>
+<ul>
+<li><strong>Growth:</strong> Real GDP (YoY and QoQ, from FRED)</li>
+<li><strong>Inflation:</strong> CPI (YoY and QoQ, from FRED)</li>
+</ul>
+<h3 id="methodology">Methodology<a hidden class="anchor" aria-hidden="true" href="#methodology">#</a></h3>
+<ol>
+<li><strong>Data Collection:</strong> Download quarterly US Real GDP and CPI data from FRED.</li>
+<li><strong>Calculate Rates of Change:</strong> Compute YoY and QoQ changes for both series.</li>
+<li><strong>Quad Assignment Rules:</strong>
+<ul>
+<li>If growth RoC &gt; 0 and inflation RoC &lt; 0 → Quad 1</li>
+<li>If growth RoC &gt; 0 and inflation RoC &gt; 0 → Quad 2</li>
+<li>If growth RoC &lt; 0 and inflation RoC &gt; 0 → Quad 3</li>
+<li>If growth RoC &lt; 0 and inflation RoC &lt; 0 → Quad 4</li>
+</ul>
+</li>
+<li><strong>Backtest:</strong> Assign each quarter to a Quad and compare the results to the Hedgeye benchmark image above.</li>
+<li><strong>Validation:</strong> Analyze discrepancies and refine the process as needed.</li>
+</ol>
+<h3 id="next-steps">Next Steps<a hidden class="anchor" aria-hidden="true" href="#next-steps">#</a></h3>
+<ul>
+<li><strong>Implementation:</strong> I’ll code this process in Python, using Pandas for data wrangling and Matplotlib for visualization.</li>
+<li><strong>Benchmarking:</strong> I’ll publish the results, including a side-by-side comparison with the Hedgeye Quads.</li>
+<li><strong>Iteration:</strong> Any mismatches will be investigated and the methodology refined.</li>
+</ul>
+<h3 id="why-this-matters">Why This Matters<a hidden class="anchor" aria-hidden="true" href="#why-this-matters">#</a></h3>
+<p>A robust, repeatable GIP model is the foundation for the rest of my investment process. If I can reliably identify macro regimes, I can systematically align asset allocation and risk management with the prevailing environment.</p>
+<hr>
+<p><em>Stay tuned for the next post, where I’ll share the code, results, and lessons learned from this first validation step.</em></p>
+<hr>
+<p>Let me know if you want to add code snippets, FRED links, or any other details!</p>
 
 
   </div>
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="http://localhost:1313/tags/aws/">AWS</a></li>
-      <li><a href="http://localhost:1313/tags/regex/">RegEx</a></li>
-      <li><a href="http://localhost:1313/tags/mkdocs/">MkDocs</a></li>
-      <li><a href="http://localhost:1313/tags/github-action/">GitHub Action</a></li>
-      <li><a href="http://localhost:1313/tags/docker/">Docker</a></li>
-      <li><a href="http://localhost:1313/tags/bash/">Bash</a></li>
-      <li><a href="http://localhost:1313/tags/typescript/">TypeScript</a></li>
-      <li><a href="http://localhost:1313/tags/node.js/">Node.JS</a></li>
+      <li><a href="http://localhost:1313/tags/gip-model/">GIP Model</a></li>
+      <li><a href="http://localhost:1313/tags/backtesting/">Backtesting</a></li>
     </ul>
   </footer>
 </article>
